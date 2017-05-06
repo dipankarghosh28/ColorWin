@@ -224,33 +224,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COLOR WIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PK8-DO-ZQ8">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="157"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="113"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                             <color key="textColor" red="0.40711141174336446" green="0.26782487228019908" blue="0.62840425998736649" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ppe-wZ-n5a">
-                            <rect key="frame" x="0.0" y="229" width="375" height="117"/>
+                            <rect key="frame" x="0.0" y="113" width="375" height="106"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                            <state key="normal" title="Start">
+                            <state key="normal" title="Press for Instructions &amp; to Start">
                                 <color key="titleColor" red="0.20493760784870599" green="0.48342875024673876" blue="0.78850041383352032" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="push" id="4eR-CQ-atV"/>
+                                <segue destination="QLq-h5-HXA" kind="push" id="nMa-Rp-N2o"/>
                             </connections>
                         </button>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="VLI-dK-icu">
-                                <rect key="frame" x="0.0" y="185" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VLI-dK-icu" id="pVK-eW-E05">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="9eO-tU-i7v" id="1QX-AU-Yqi"/>
                             <outlet property="delegate" destination="9eO-tU-i7v" id="ndZ-HJ-DOs"/>
@@ -261,6 +251,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rK2-Hn-Ge0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="428" y="545.57721139430294"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UVS-sQ-3Bf">
+            <objects>
+                <viewController id="QLq-h5-HXA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cdw-Ao-Vv3"/>
+                        <viewControllerLayoutGuide type="bottom" id="mRv-Hc-Xlz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j52-fc-STs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXX-Q1-krT">
+                                <rect key="frame" x="81" y="307" width="213" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Start The Game">
+                                    <color key="titleColor" red="0.40711141169999998" green="0.26782487230000002" blue="0.62840426000000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="Q1R-zL-Lbw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xzX-ph-7Kx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Nb-UI-dUl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1140" y="543.77811094452773"/>
         </scene>
     </scenes>
 </document>
