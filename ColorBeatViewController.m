@@ -141,4 +141,48 @@
     }
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.timerFloat = TIMER_COUNT;
+    [self changePuzzle];
+    
+    NSString *audioPos = [NSString stringWithFormat:@"%@/Pos.wav", [[NSBundle mainBundle] resourcePath]];
+    NSString *audioNeg = [NSString stringWithFormat:@"%@/Neg.wav", [[NSBundle mainBundle] resourcePath]];
+    NSString *audioGame = [NSString stringWithFormat:@"%@/Game.wav", [[NSBundle mainBundle] resourcePath]];
+    
+    NSURL *urlPos = [NSURL fileURLWithPath:audioPos];
+    NSURL *urlNeg = [NSURL fileURLWithPath:audioNeg];
+    NSURL *urlGame = [NSURL fileURLWithPath:audioGame];
+    
+    // NSAssert(url, @"URL is valid.");
+    NSError* error = nil;
+    self.playerPos = [[AVAudioPlayer alloc] initWithContentsOfURL:urlPos error: &error];
+    self.playerNeg = [[AVAudioPlayer alloc] initWithContentsOfURL:urlNeg error: &error];
+    self.playerGame = [[AVAudioPlayer alloc] initWithContentsOfURL:urlGame error: &error];
+    [self.playerPos setVolume: 0.02];
+    [self.playerNeg setVolume: 0.02];
+    [self.playerGame setVolume: 0.01];
+    
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    [self addQuizButtons];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self changePuzzle];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self addQuizButtons];
+    
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateTimer:) userInfo:nil repeats:YES];
+}
+
 @end
