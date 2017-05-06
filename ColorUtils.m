@@ -74,4 +74,23 @@
     return arc4random() % colorCount;
 }
 
+#pragma mark Score
+#define Score @"ColorTeller.score"
+#define HighestScore @"ColorTeller.highestScore"
+
+
++ (void)saveHighestScore:(NSInteger)score
+{
+    NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
+    [standardUserDefaults setInteger:score forKey:HighestScore];
+}
+
++ (NSInteger)getHighestScore
+{
+    NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
+    NSInteger score = [standardUserDefaults integerForKey:HighestScore];
+    return score;
+}
+
+
 @end
