@@ -184,5 +184,24 @@
     
     self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(updateTimer:) userInfo:nil repeats:YES];
 }
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Remove the timer when in other View Controller
+    [self.timer invalidate];
+    
+    if ([segue.identifier isEqualToString:@"ResultFinal"]) {
+        if ([segue.destinationViewController isKindOfClass:[ResultViewController class]]) {
+            ResultViewController *vc = (ResultViewController *)segue.destinationViewController;
+            vc.score = self.count;
+            [self.playerGame play];
+            
+            self.count = 0;
+            self.isGameStarted = NO;
+        }
+    }
+    
+}
+
+
 
 @end
