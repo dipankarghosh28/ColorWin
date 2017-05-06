@@ -19,9 +19,9 @@
 		D5768D931EB1837300A41726 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5768D921EB1837300A41726 /* ResultViewController.m */; };
 		D5768D961EB183A700A41726 /* ColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D5768D951EB183A700A41726 /* ColorUtils.m */; };
 		D5768D991EB183C100A41726 /* RoundedCornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5768D981EB183C100A41726 /* RoundedCornerView.m */; };
-		D58FF5DC1EBE3DAE00CEC96E /* Game.wav in Resources */ = {isa = PBXBuildFile; fileRef = D58FF5D91EBE3DAE00CEC96E /* Game.wav */; };
-		D58FF5DD1EBE3DAE00CEC96E /* Neg.wav in Resources */ = {isa = PBXBuildFile; fileRef = D58FF5DA1EBE3DAE00CEC96E /* Neg.wav */; };
-		D58FF5DE1EBE3DAE00CEC96E /* Pos.wav in Resources */ = {isa = PBXBuildFile; fileRef = D58FF5DB1EBE3DAE00CEC96E /* Pos.wav */; };
+		D58FF5EE1EBE5BC900CEC96E /* Game.wav in Resources */ = {isa = PBXBuildFile; fileRef = D58FF5EB1EBE5BC900CEC96E /* Game.wav */; };
+		D58FF5EF1EBE5BC900CEC96E /* Neg.wav in Resources */ = {isa = PBXBuildFile; fileRef = D58FF5EC1EBE5BC900CEC96E /* Neg.wav */; };
+		D58FF5F01EBE5BC900CEC96E /* Pos.wav in Resources */ = {isa = PBXBuildFile; fileRef = D58FF5ED1EBE5BC900CEC96E /* Pos.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,9 +66,9 @@
 		D5768D951EB183A700A41726 /* ColorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUtils.m; sourceTree = "<group>"; };
 		D5768D971EB183C100A41726 /* RoundedCornerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundedCornerView.h; sourceTree = "<group>"; };
 		D5768D981EB183C100A41726 /* RoundedCornerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedCornerView.m; sourceTree = "<group>"; };
-		D58FF5D91EBE3DAE00CEC96E /* Game.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Game.wav; path = ../../ColorFinal/ColorBeat/audio/Game.wav; sourceTree = "<group>"; };
-		D58FF5DA1EBE3DAE00CEC96E /* Neg.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Neg.wav; path = ../../ColorFinal/ColorBeat/audio/Neg.wav; sourceTree = "<group>"; };
-		D58FF5DB1EBE3DAE00CEC96E /* Pos.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Pos.wav; path = ../../ColorFinal/ColorBeat/audio/Pos.wav; sourceTree = "<group>"; };
+		D58FF5EB1EBE5BC900CEC96E /* Game.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Game.wav; sourceTree = "<group>"; };
+		D58FF5EC1EBE5BC900CEC96E /* Neg.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Neg.wav; sourceTree = "<group>"; };
+		D58FF5ED1EBE5BC900CEC96E /* Pos.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Pos.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +99,9 @@
 		D5768D4C1EB1834600A41726 = {
 			isa = PBXGroup;
 			children = (
-				D58FF5D91EBE3DAE00CEC96E /* Game.wav */,
-				D58FF5DA1EBE3DAE00CEC96E /* Neg.wav */,
-				D58FF5DB1EBE3DAE00CEC96E /* Pos.wav */,
+				D58FF5EB1EBE5BC900CEC96E /* Game.wav */,
+				D58FF5EC1EBE5BC900CEC96E /* Neg.wav */,
+				D58FF5ED1EBE5BC900CEC96E /* Pos.wav */,
 				D5768D8B1EB1835800A41726 /* HelpViewController.h */,
 				D5768D8C1EB1835800A41726 /* HelpViewController.m */,
 				D5768D8E1EB1836500A41726 /* ColorBeatViewController.h */,
@@ -277,9 +277,9 @@
 			files = (
 				D5768D681EB1834600A41726 /* LaunchScreen.storyboard in Resources */,
 				D5768D651EB1834600A41726 /* Assets.xcassets in Resources */,
-				D58FF5DD1EBE3DAE00CEC96E /* Neg.wav in Resources */,
-				D58FF5DE1EBE3DAE00CEC96E /* Pos.wav in Resources */,
-				D58FF5DC1EBE3DAE00CEC96E /* Game.wav in Resources */,
+				D58FF5F01EBE5BC900CEC96E /* Pos.wav in Resources */,
+				D58FF5EF1EBE5BC900CEC96E /* Neg.wav in Resources */,
+				D58FF5EE1EBE5BC900CEC96E /* Game.wav in Resources */,
 				D5768D631EB1834600A41726 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
