@@ -265,14 +265,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXX-Q1-krT">
-                                <rect key="frame" x="81" y="307" width="213" height="105"/>
+                                <rect key="frame" x="81" y="281" width="213" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Start The Game">
                                     <color key="titleColor" red="0.40711141169999998" green="0.26782487230000002" blue="0.62840426000000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="push" id="Q1R-zL-Lbw"/>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="1pP-Oa-Uce"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oy2-db-gvK">
+                                <rect key="frame" x="55" y="269" width="265" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Instruction to the game">
+                                    <color key="titleColor" red="0.40711141169999998" green="0.26782487230000002" blue="0.62840426000000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PA2-HQ-gcJ" kind="push" id="Vmg-9R-OtS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -282,7 +293,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Nb-UI-dUl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1140" y="543.77811094452773"/>
+            <point key="canvasLocation" x="1140" y="542.87856071964018"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OTw-bE-N1w">
+            <objects>
+                <viewController id="PA2-HQ-gcJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XxV-gZ-jFg"/>
+                        <viewControllerLayoutGuide type="bottom" id="lsx-31-Yg4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2kc-Sz-E1Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Click on the color written inside the box" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aU3-g4-LC3">
+                                <rect key="frame" x="49" y="88" width="277" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VaT-9n-tXQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1l1-YD-GlW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855.2" y="545.57721139430294"/>
         </scene>
     </scenes>
 </document>
