@@ -1,11 +1,6 @@
 //
 //  ColorUtils.m
 //  ColorWin
-//
-//  Created by Dipankar Ghosh on 4/26/17.
-//  Copyright © 2017 Dipankar Ghosh. All rights reserved.
-//
-//
 //  ColorUtils.m
 //  ColorWin
 //
@@ -20,22 +15,17 @@
 
 + (UIColor *)redColor
 {
-    // return [UIColor colorWithRed:234.0/255.0 green:89.0/255.0 blue:110.0/255.0 alpha:1]; // Light red
-    return [UIColor colorWithRed:244/255.0 green:171/255.0 blue:186/255.0 alpha:1]; // Faded red
+    return [UIColor colorWithRed:244/255.0 green:171/255.0 blue:186/255.0 alpha:1];
 }
 
 + (UIColor *)blueColor
 {
-    // return [UIColor colorWithRed:136.0/255.0 green:201.0/255.0 blue:249.0/255.0 alpha:1]; // Light Blue
-    return [UIColor colorWithRed:80/255.0 green:165.0/255.0 blue:230.0/255.0 alpha:1]; // Medium
+     return [UIColor colorWithRed:80/255.0 green:165.0/255.0 blue:230.0/255.0 alpha:1];
 }
 
 + (UIColor *)greenColor
 {
-    // return [UIColor colorWithRed:166.0/255.0 green:211.0/255.0 blue:136.0/255.0 alpha:1];
-    // return [UIColor colorWithRed:119/255.0 green:178.0/255.0 blue:85.0/255.0 alpha:1]; // Medium
-    return [UIColor colorWithRed:62/255.0 green:114.0/255.0 blue:29.0/255.0 alpha:1]; // Dark Green
-    // return [UIColor colorWithRed:92/255.0 green:145.0/255.0 blue:59.0/255.0 alpha:1]; // Deep Green
+    return [UIColor colorWithRed:62/255.0 green:114.0/255.0 blue:29.0/255.0 alpha:1];
 }
 
 + (UIColor *)yellowColor
@@ -91,6 +81,5 @@
     NSInteger score = [standardUserDefaults integerForKey:HighestScore];
     return score;
 }
-
 
 @end

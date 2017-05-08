@@ -155,7 +155,6 @@
     NSURL *urlNeg = [NSURL fileURLWithPath:audioNeg];
     NSURL *urlGame = [NSURL fileURLWithPath:audioGame];
     
-    // NSAssert(url, @"URL is valid.");
     NSError* error = nil;
     self.playerPos = [[AVAudioPlayer alloc] initWithContentsOfURL:urlPos error: &error];
     self.playerNeg = [[AVAudioPlayer alloc] initWithContentsOfURL:urlNeg error: &error];
