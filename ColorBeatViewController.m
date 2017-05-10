@@ -27,13 +27,12 @@
 @property (nonatomic) CGFloat timerFloat;
 @property (nonatomic) BOOL isGameStarted;
 
-
 @end
 
 
 @implementation ColorBeatViewController
 
-#define TIMER_COUNT 10.0
+#define TIMER_COUNT 8.0
 
 #pragma mark Controller
 
@@ -52,7 +51,6 @@
 
 - (void)changePuzzle
 {
-    // Get Two Random Color
     NSArray *colors = [ColorUtils validColors];
     NSUInteger colorCount = [colors count];
     NSUInteger colorIndex1 = [ColorUtils randomIndex:colorCount];
@@ -94,13 +92,13 @@
     self.timerFloat -= 0.1;
     if (self.timerFloat <= 0)
     {
-        NSLog(@"Entered here");
         [self performSegueWithIdentifier:@"ResultFinal" sender:self];
         self.timerFloat = TIMER_COUNT;
     }
 }
 
-- (void)buttonTapped:(UITapGestureRecognizer *)gr {
+- (void)buttonTapped:(UITapGestureRecognizer *)gr
+{
     RoundedCornerView *buttonView = (RoundedCornerView *)gr.view;
     NSUInteger buttonIndex = [self.buttonsView.subviews indexOfObject:buttonView];
     [self checkAnswer:buttonIndex];
@@ -185,11 +183,11 @@
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Remove the timer when in other View Controller
     [self.timer invalidate];
     
     if ([segue.identifier isEqualToString:@"ResultFinal"]) {
-        if ([segue.destinationViewController isKindOfClass:[ResultViewController class]]) {
+        if ([segue.destinationViewController isKindOfClass:[ResultViewController class]])
+        {
             ResultViewController *vc = (ResultViewController *)segue.destinationViewController;
             vc.score = self.count;
             [self.playerGame play];
