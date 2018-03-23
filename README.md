@@ -1,5 +1,6 @@
 # ColorWin
 ColorWin iOS game
+
 -Tap the correct color as shown on the screen.
 
 -With every correct tap you get some time on the timer.
